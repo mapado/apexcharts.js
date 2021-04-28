@@ -1136,6 +1136,6 @@ type ApexTheme = {
   }
 }
 
-declare module '@mapado/apexcharts' {
+declare module 'apexcharts' {
   export = ApexCharts
 }
