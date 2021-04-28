@@ -88,22 +88,22 @@ type ApexChart = {
   width?: string | number
   height?: string | number
   type?:
-    | 'line'
-    | 'area'
-    | 'bar'
-    | 'histogram'
-    | 'pie'
-    | 'donut'
-    | 'radialBar'
-    | 'scatter'
-    | 'bubble'
-    | 'heatmap'
-    | 'candlestick'
-    | 'boxPlot'
-    | 'radar'
-    | 'polarArea'
-    | 'rangeBar'
-    | 'treemap'
+  | 'line'
+  | 'area'
+  | 'bar'
+  | 'histogram'
+  | 'pie'
+  | 'donut'
+  | 'radialBar'
+  | 'scatter'
+  | 'bubble'
+  | 'heatmap'
+  | 'candlestick'
+  | 'boxPlot'
+  | 'radar'
+  | 'polarArea'
+  | 'rangeBar'
+  | 'treemap'
   foreColor?: string
   fontFamily?: string
   background?: string
@@ -299,10 +299,10 @@ type ApexAxisChartSeries = {
   type?: string
   color?: string
   data:
-    | (number | null)[]
-    | { x: any; y: any, fillColor?: string, strokeColor?: string }[]
-    | [number, (number | null)][]
-    | [number, (number | null)[]][]
+  | (number | null)[]
+  | { x: any; y: any, fillColor?: string, strokeColor?: string }[]
+  | [number, (number | null)][]
+  | [number, (number | null)[]][]
 }[]
 
 type ApexNonAxisChartSeries = number[]
@@ -929,7 +929,7 @@ type ApexXAxis = {
     offsetX?: number
     offsetY?: number
     format?: string
-    formatter?(value: string, timestamp?: number, opts?:any): string | string[]
+    formatter?(value: string, timestamp?: number, opts?: any): string | string[]
     datetimeUTC?: boolean
     datetimeFormatter?: {
       year?: string
@@ -1136,6 +1136,6 @@ type ApexTheme = {
   }
 }
 
-declare module 'apexcharts' {
+declare module '@mapado/apexcharts' {
   export = ApexCharts
 }
